@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Manhwa Library</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <a href="#">My Manhwa Library</a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar manhwa..." />
+      </div>
+      <div class="buttons">
+        <button class="glass">Categorías</button>
+        <button class="glass">Perfil</button>
+      </div>
+    </div>
+    <div class="hero-wrapper">
+      <div class="hero">
+        <img src="encabezados/Blue Underwater Life Moodboard Facebook Cover.png" alt="Encabezado My Manhwa Library" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h2>Tu rincón para descubrir manhwas con alma, encanto y emoción</h2>
+    </section>
+
+    <section class="recomendados">
+      <h2>Manhwas Recomendados</h2>
+
+    <div class="carrusel">
+  <button class="flecha izquierda" onclick="retroceder()">←</button>
+
+  <div class="carrusel-ventana">
+    <div class="manhwa-covers" id="carrusel">
+      <a href="En realidad es las lagrimas entre flores marchitas.htm.html" class="manhwa">
+        <img src="recomendados/descarga (9).jfif" alt="Forbidden Love" />
+        <div class="titulo">En realidad es las lágrimas entre flores marchitas</div>
+
+      
+     <a href="Operacion de amor verdadero.html.html" class="manhwa">
+  <img src="recomendados/descarga (8).jfif" alt="Operacion de amor verdadero" />
+  <div class="titulo">Operación de amor verdadero</div>
+</a>
+      <a href="como poner a mi esposo de mi lado.html.html" class="manhwa">
+        <img src="recomendados/descarga (7).jfif" alt="Feelings Hoesame" />
+        <div class="titulo">Cómo poner a mi esposo de mi lado</div>
+      </a>
+      <a href="El Anillo Roto.html.html" class="manhwa">
+       <img src="recomendados/descarga (10).jfif" alt="Rebirth of the Villainess" />
+        <div class="titulo">El Anillo Roto</div>
+      </a>
+      <a href="Tras Adoptar Al Protagonista El Género Cambio.html.html" class="manhwa">
+        <img src="recomendados/1000284994.jpg" alt="My Secret Garden" />
+        <div class="titulo">"Cuando adopté al protagonista, el género cambió</div>
+      </a>
+    </div>
+  </div>
+
+  <button class="flecha derecha" onclick="avanzar()">→</button>
+</div>
+
+<section class="recien-llegadas">
+  <h2>RECIÉN LLEGADAS</h2>
+  <div class="manhwas-nuevos">
+    <a href="No Subestimes Al Esposo Conejo.html" class="manhwa-nuevo">
+      <img src="actualizadas/7 (4).jpg"Manhwa 1" />
+      <p>No Subestimes Al Esposo Conejo</p>
+    </a>
+    <a href="Plaything.html" class="manhwa-nuevo">
+      <img src="actualizadas/7 (7).jpeg" alt="Manhwa 3" />
+      <p>Plaything</p>
+    </a>
+    <a href="Lo Que Significa Ser Tu.html" class="manhwa-nuevo">
+      <img src="actualizadas/7 (3).jfif" alt="Manhwa 4" />
+      <p>Lo Que Significa Ser Tu</p>
+    </a>
+    <a href="manhwa5.html" class="manhwa-nuevo">
+      <img src="actualizadas/7 (6).jfif" alt="Manhwa 5" />
+      <p>Las Hermanas Ki</p>
+    </a>
+    <a href="Camino A Ver A Mi Madre.html" class="manhwa-nuevo">
+      <img src="actualizadas/7 (5).jfif" alt="Manhwa 6" />
+      <p>Camino A Ver A Mi Madre</p>
+    </a>
+  </div>
+</section>
+
+<section class="actualizadas">
+  <h2>ACTUALIZADAS</h2>
+  <div class="grid-actualizadas">
+    <div class="manhwa-actualizado">
+      <div class="genero">Drama</div>
+      <img src="actualizadas/1.jfif" alt="Teoria Del Amor Egoista" />
+      <div class="info-actualizada">
+        <span class="nuevo-ep">Nuevo Ep</span>
+        <p>Teoria Del Amor Egoista</p>
+      </div>
+    </div>
+    <div class="manhwa-actualizado">
+      <div class="genero">Drama</div>
+      <img src="actualizadas/2.jfif" alt="Matrimonio Contractual" />
+      <div class="info-actualizada">
+        <span class="nuevo-ep">Nuevo Ep</span>
+        <p>Matrimonio Contractual</p>
+      </div>
+    </div>
+    <div class="manhwa-actualizado">
+      <div class="genero">Romance</div>
+      <img src="actualizadas/3.jfif" alt="Llora O Mejor Aun Suplica" />
+      <div class="info-actualizada">
+        <span class="nuevo-ep">Nuevo Ep</span>
+        <p>Llora O Mejor Aun Suplica</p>
+      </div>
+    </div>
+    <div class="manhwa-actualizado">
+      <div class="genero">Histórico</div>
+      <img src="actualizadas/4.jfif" alt="El Unico Final De La villana Es La Muerte" />
+      <div class="info-actualizada">
+        <span class="nuevo-ep">Nuevo Ep</span>
+        <p>El Unico Final De La villana Es La Muerte</p>
+      </div>
+    </div>
+    <div class="manhwa-actualizado">
+      <div class="genero">Fantasia</div>
+      <img src="actualizadas/5.jfif" alt="Serena" />
+      <div class="info-actualizada">
+        <span class="nuevo-ep">Nuevo Ep</span>
+        <p>Serena</p>
+      </div>
+  </div>
+</section>
+<section class="formulario-contacto">
+  <h2>Escríbeme</h2>
+  <p>Tu mensaje es importante para mí. ¿Cómo puedo ayudarte?</p>
+
+  <form id="contactForm" novalidate>
+    <div class="campo">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required />
+      <span class="error-message" id="error-nombre"></span>
+    </div>
+
+    <div class="campo">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required />
+      <span class="error-message" id="error-email"></span>
+    </div>
+
+    <div class="campo">
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      <span class="error-message" id="error-mensaje"></span>
+    </div>
+
+    <button type="submit" class="glass">Enviar mensaje</button>
+  </form>
+</section>
+
+ <footer class="footer-principal">
+  <div class="footer-superior">
+    <div class="footer-identidad">
+      <img src="encabezados/conejito lector.png" alt="Ilustración lectores" />
+      <div class="marca">
+        <h1>My Manhwa Library</h1>
+        <p class="slogan">Tu rincón para descubrir narrativas con alma, encanto y emoción.</p>
+      </div>
+    </div>
+
+    <div class="footer-enlaces">
+      <div class="bloque">
+        <h3>Comunidad</h3>
+        <ul>
+          <li><a href="#">Foro de lectores</a></li>
+          <li><a href="#">Reseñas y opiniones</a></li>
+          <li><a href="#">Eventos especiales</a></li>
+          <li><a href="#">Sorteos y dinámicas</a></li>
+        </ul>
+      </div>
+      <div class="bloque">
+        <h3>Contacto</h3>
+        <p>¿Tienes preguntas, sugerencias o propuestas?</p>
+        <p><strong>📧 contacto@vinetasqueenamoran.com</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-final">
+    <p>© 2025 Viñetas que Enamoran. Todos los derechos reservados.</p>
+    <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Uso</a></p>
+  </div>
+</footer>
+
+  <script>
+    const carrusel = document.getElementById("carrusel");
+    const manhwas = carrusel.querySelectorAll(".manhwa");
+    let posicion = 0;
+
+    function actualizarFoco() {
+      manhwas.forEach((item, index) => {
+        item.classList.remove("activo", "opaco");
+        if (index === posicion + 1) {
+          item.classList.add("activo");
+        } else {
+          item.classList.add("opaco");
+        }
+      });
+    }
+
+    function avanzar() {
+      if (posicion < manhwas.length - 3) {
+        posicion++;
+        carrusel.style.transform = `translateX(-${posicion * 570}px)`; // 540 + 30
+        actualizarFoco();
+      }
+    }
+
+    function retroceder() {
+      if (posicion > 0) {
+        posicion--;
+        carrusel.style.transform = `translateX(-${posicion * 570}px)`; // 540 + 30
+        actualizarFoco();
+      }
+    }
+
+    actualizarFoco();
+  </script>
+
+  <script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let valid = true;
+
+    const nombre = document.getElementById("nombre");
+    const email = document.getElementById("email");
+    const mensaje = document.getElementById("mensaje");
+
+    const errorNombre = document.getElementById("error-nombre");
+    const errorEmail = document.getElementById("error-email");
+    const errorMensaje = document.getElementById("error-mensaje");
+
+    errorNombre.textContent = "";
+    errorEmail.textContent = "";
+    errorMensaje.textContent = "";
+
+    if (nombre.value.trim() === "") {
+      errorNombre.textContent = "Ups, parece que olvidaste tu nombre.";
+      valid = false;
+    }
+
+    if (!email.value.includes("@")) {
+      errorEmail.textContent = "Por favor, ingresa un correo válido.";
+      valid = false;
+    }
+
+    if (mensaje.value.trim() === "") {
+      errorMensaje.textContent = "¿Qué te gustaría decirme?";
+      valid = false;
+    }
+
+    if (valid) {
+      alert("¡Gracias por tu mensaje! Pronto te responderé.");
+      // Aquí podrías enviar el formulario con fetch o resetearlo
+      // e.target.reset();
+    }
+  });
+</script>
+
+</body>
+</html>

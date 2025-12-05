@@ -1,0 +1,236 @@
+/* Paleta base y efectos */
+:root {
+  --fondo: #1a1a2e;
+  --texto: #fefefe;
+  --destacado: #ffb6c1;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado superior */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.logo a {
+  font-size: 20px;
+  color: var(--destacado);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.search-bar input {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--glass-bg);
+  color: var(--texto);
+  width: 240px;
+}
+
+.buttons button {
+  margin-left: 12px;
+}
+
+/* Botón glass */
+.glass {
+  background-color: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--texto);
+  padding: 8px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+}
+
+.glass:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Layout principal */
+.detalle-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+}
+
+.columna-izquierda {
+  flex: 2;
+  display: block;
+}
+.portada {
+  float: left;
+  margin-right: 40px;
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+.info {
+  overflow: hidden;
+}
+
+
+.portada {
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  margin-bottom: 24px;
+}
+
+.info {
+  max-width: 600px;
+  text-align: left;
+}
+
+.info h1 {
+  font-size: 28px;
+  color: var(--destacado);
+  margin-bottom: 16px;
+}
+
+.sinopsis {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.etiquetas {
+  margin-bottom: 12px;
+}
+
+.etiquetas span {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 6px 12px;
+  background-color: var(--glass-bg);
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+  font-size: 14px;
+}
+
+.autor,
+.estado {
+  font-size: 14px;
+  margin-top: 8px;
+  opacity: 0.8;
+}
+
+/* Columna derecha */
+.columna-derecha {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 24px;
+  border-radius: 12px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.columna-derecha h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: var(--destacado);
+}
+
+.capitulos-scroll ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.capitulos-scroll li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.capitulos-scroll a {
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.capitulos-scroll a:hover {
+  text-decoration: underline;
+}
+
+.lista-pdfs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pdf-link {
+  display: block;
+  padding: 8px 12px;
+  background-color: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  color: var(--texto);
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.pdf-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Recomendaciones */
+.recomendados {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.recomendados h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: var(--destacado);
+}
+
+.manhwa-covers {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.manhwa {
+  text-align: center;
+  width: 140px;
+}
+
+.manhwa img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.titulo {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--texto);
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
